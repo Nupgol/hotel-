@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+    body {
+    
+    background-image: url('home.jpg');
+    opacity: 1;
+    background-position: all;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+    </style>
+    
+    <title>Welcome</title>
+</head>
+
+<body>
+<header style="margin: 75px;">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+                    </li>
+                    <li>
+                        <a href="makereservation.html"><i class="fa fa-book"></i> Reservations</a>
+                    </li>
+                    <li>
+                        <a href="cancelreservation.html"><i class="fa fa-book"></i> Change/Cancel Res</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html"><span class="glyphicon glyphicon-phone"></span> Contact Us</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 align="center">Hotel Pochinki</h1>
+        <br>
+
+        <p>The Pochinki is a comfortable, inviting restaurant designed to make our customers feel as if they
+            are enjoying VIP services in a world all to themselves. The decor and theme is centered around the custom
+            made "Fire Fountain", a unique show kitchen grill that has a cascading water fountain combined with flame
+            throwing torches on the dining room side, and is a sizzling 48" gas powered steak grill on the kitchen side.
+            The energy and atmosphere of the restaurant is high, and draws some of its power from the dazzling "Fire
+            Fountain".
+       
+        <p>
+            The Restaurant Hours are: <br><br>
+                    Monday-Thursday   :  3:00 pm-10:00 pm<br>
+                    Friday & Saturday :  11:00 am-1:00 am<br>
+                    Sunday            :  11:00 am-9:00 pm<br>
+        </p>
+    
+    </div>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="1.jpg" style="width:100%">
+ </div>
+
+<div class="mySlides fade">
+  <img src="2.jpg" style="width:100%">
+  </div>
+
+<div class="mySlides fade">
+  <img src="3.jpg" style="width:100%">
+ </div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
+
