@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/css/styles.css">
+    <title>Make Reservation</title>
+</head>
+
+<body>
+<header style="margin: 75px;">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+                    </li>
+                    <li>
+                        <a href="makereservation.html"><i class="fa fa-book"></i> Reservations</a>
+                    </li>
+                    <li>
+                        <a href="cancelreservation.html"><i class="fa fa-book"></i> Change/Cancel Res</a>
+                    </li>
+                   
+                    <li class="active">
+                        <a href="contactus.html"><span class="glyphicon glyphicon-phone"></span> Contact Us</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <div class="container">
+        <div class="page-header" style="font-family: Century Gothic; font-size: 20px"><h2>CONTACT US </h2></div>
+        <br>
+
+        <p style="font-family: sans-serif; font-size: 20px">
+            Hotel Pochinki Pvt. Ltd.<br>
+            New Delhi,111032<br>
+            Email:support@pochinki.net<br>
+            07805-222341,223343
+        </p>
+    </div>
+</div>
+
+
+</body>
+</html>
